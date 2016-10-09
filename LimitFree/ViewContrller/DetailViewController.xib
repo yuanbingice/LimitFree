@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="LimitFree" customModuleProvider="target">
+            <connections>
+                <outlet property="appImageView" destination="EZl-Rb-4Df" id="ToU-ES-4OS"/>
+                <outlet property="categoryLabel" destination="3Oe-uI-X2f" id="iNn-jc-4X3"/>
+                <outlet property="descLabel" destination="bwz-fo-UNX" id="foV-RJ-g9z"/>
+                <outlet property="downloadButton" destination="5jb-v3-iFB" id="ID9-53-sFu"/>
+                <outlet property="favoriteButton" destination="187-gC-W5J" id="LYQ-Qu-q8z"/>
+                <outlet property="imageScrollView" destination="ddE-iK-5HF" id="bhF-cD-GA4"/>
+                <outlet property="lastPriceLabel" destination="IDj-wp-Gwy" id="7QZ-Vr-c72"/>
+                <outlet property="nameLabel" destination="Ylz-dl-DHp" id="D4s-wk-g1b"/>
+                <outlet property="nearByScrollView" destination="6wt-gV-jo7" id="3O7-ji-qlK"/>
+                <outlet property="rateLabel" destination="gb0-gf-kS4" id="ePY-Ch-sPT"/>
+                <outlet property="shareButton" destination="djp-nZ-KhL" id="1zY-YQ-uTc"/>
+                <outlet property="sizeLabel" destination="Usa-l9-vJM" id="kxi-Fj-cyp"/>
+                <outlet property="statusLabel" destination="PTh-Bh-H90" id="OXO-J8-T0E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appdetail_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-ix-QE8">
+                    <rect key="frame" x="10" y="100" width="355" height="300"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylz-dl-DHp" userLabel="nameLabel">
+                    <rect key="frame" x="100" y="105" width="255" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDj-wp-Gwy" userLabel="lastPriceLabel">
+                    <rect key="frame" x="100" y="130" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTh-Bh-H90" userLabel="statusLabel">
+                    <rect key="frame" x="190" y="130" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-l9-vJM" userLabel="sizeLabel">
+                    <rect key="frame" x="260" y="130" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oe-uI-X2f" userLabel="categoryLabel">
+                    <rect key="frame" x="100" y="155" width="100" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-gf-kS4" userLabel="rateLabel">
+                    <rect key="frame" x="220" y="155" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djp-nZ-KhL" userLabel="shareButton">
+                    <rect key="frame" x="10" y="180" width="118" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="分享" backgroundImage="Detail_btn_left.png">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shareAction:" destination="-1" eventType="touchUpInside" id="Njl-G0-XJv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="187-gC-W5J" userLabel="favoriteButton">
+                    <rect key="frame" x="128" y="180" width="118" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="收藏" backgroundImage="Detail_btn_middle.png">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="favoriteAction:" destination="-1" eventType="touchUpInside" id="HFO-FM-cpR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jb-v3-iFB" userLabel="downloadButton">
+                    <rect key="frame" x="245" y="180" width="119" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="下载" backgroundImage="Detail_btn_right.png">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadAction:" destination="-1" eventType="touchUpInside" id="tOk-0e-Lr9"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-iK-5HF" userLabel="imageScrollView">
+                    <rect key="frame" x="20" y="220" width="335" height="80"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="加载中" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwz-fo-UNX" userLabel="descLabel">
+                    <rect key="frame" x="20" y="310" width="335" height="70"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appdetail_recommend.png" translatesAutoresizingMaskIntoConstraints="NO" id="onI-UK-j4t">
+                    <rect key="frame" x="10" y="460" width="355" height="120"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wt-gV-jo7" userLabel="nearByScrollView">
+                    <rect key="frame" x="20" y="490" width="335" height="80"/>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZl-Rb-4Df" userLabel="appImageView">
+                    <rect key="frame" x="20" y="113" width="67" height="59"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="452.5" y="-128.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Detail_btn_left.png" width="100" height="42"/>
+        <image name="Detail_btn_middle.png" width="101" height="42"/>
+        <image name="Detail_btn_right.png" width="100" height="42"/>
+        <image name="appdetail_background.png" width="301" height="284"/>
+        <image name="appdetail_recommend.png" width="301" height="103"/>
+    </resources>
+</document>
